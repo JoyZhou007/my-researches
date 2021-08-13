@@ -55,32 +55,32 @@ export class VrHouseComponent implements AfterViewInit {
     let materials = [];
     //根据左右上下前后的顺序构建六个面的材质集
     const texture_left = new THREE.TextureLoader().load(
-      './../assets/images/scene_left.jpeg'
+      'assets/images/scene_left.jpeg'
     );
     materials.push(new THREE.MeshBasicMaterial({ map: texture_left }));
 
     const texture_right = new THREE.TextureLoader().load(
-      './../assets/images/scene_right.jpeg'
+      'assets/images/scene_right.jpeg'
     );
     materials.push(new THREE.MeshBasicMaterial({ map: texture_right }));
 
     const texture_top = new THREE.TextureLoader().load(
-      './../assets/images/scene_top.jpeg'
+      'assets/images/scene_top.jpeg'
     );
     materials.push(new THREE.MeshBasicMaterial({ map: texture_top }));
 
     const texture_bottom = new THREE.TextureLoader().load(
-      './../assets/images/scene_bottom.jpeg'
+      'assets/images/scene_bottom.jpeg'
     );
     materials.push(new THREE.MeshBasicMaterial({ map: texture_bottom }));
 
     const texture_front = new THREE.TextureLoader().load(
-      './../assets/images/scene_front.jpeg'
+      'assets/images/scene_front.jpeg'
     );
     materials.push(new THREE.MeshBasicMaterial({ map: texture_front }));
 
     const texture_back = new THREE.TextureLoader().load(
-      './../assets/images/scene_back.jpeg'
+      'assets/images/scene_back.jpeg'
     );
     materials.push(new THREE.MeshBasicMaterial({ map: texture_back }));
 
@@ -124,7 +124,7 @@ export class VrHouseComponent implements AfterViewInit {
 
   addHotPoint() {
     const pointTexture = new THREE.TextureLoader().load(
-      './../../../../assets/images/hot.png'
+      'assets/images/hot.png'
     );
     const material = new THREE.SpriteMaterial({ map: pointTexture });
     for (let i = 0; i < this.hotPoints.length; i++) {
